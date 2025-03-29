@@ -1,0 +1,121 @@
+[
+  {
+    "ContainingType": "AssessmentServices.Controllers.AssessmentController",
+    "Method": "GetAIMCQByJob",
+    "RelativePath": "ASSESSMENTSERVICE/ASSESSMENT/JOB/CANDIDATE/GETMCQ/{AID}/{jobId}/{CID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "jobId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "CID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AssessmentServices.Models.Dto.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AssessmentServices.Controllers.AssessmentController",
+    "Method": "CallUpdateProfileJourneyStatus",
+    "RelativePath": "ASSESSMENTSERVICE/CallUpdateProfileJourneyStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UpdateProfileJourneyStatusRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AssessmentServices.Models.Dto.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AssessmentServices.Controllers.AssessmentController",
+    "Method": "EvaluateMCQ",
+    "RelativePath": "ASSESSMENTSERVICE/EvaluateMCQ",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AssessmentServices.Models.Dto.EvaluateRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AssessmentServices.Models.Dto.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AssessmentServices.Controllers.AssessmentController",
+    "Method": "GetByJobAndCandidate",
+    "RelativePath": "ASSESSMENTSERVICE/JOB/CANDIDATE/ASSESSMENTSTATE/{jobId}/{candidateId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "candidateId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AssessmentServices.Models.Dto.ResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
